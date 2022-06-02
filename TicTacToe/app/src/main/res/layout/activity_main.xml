@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".thegame"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textView"
+        android:text="X' turn, start the game"
+        android:textColor="#2E170A"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/play_button"
+        android:text="Reset"
+        android:layout_marginBottom="25dp"/>
+    <LinearLayout
+        android:background="@drawable/tictactow_bord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:contentDescription="c1"
+                android:onClick="playerTap"
+                android:src="@drawable/cross"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:contentDescription="c2"
+                android:onClick="playerTap"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/i3"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:contentDescription="c3"
+                android:onClick="playerTap"
+                android:tag="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/i4"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:contentDescription="c4"
+                android:onClick="playerTap"
+                android:tag="3" />
+
+            <ImageView
+                android:id="@+id/i5"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:contentDescription="c5"
+                android:onClick="playerTap"
+                android:tag="4" />
+
+            <ImageView
+                android:id="@+id/i6"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:contentDescription="c6"
+                android:onClick="playerTap"
+                android:tag="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/i7"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:contentDescription="c7"
+                android:onClick="playerTap"
+                android:tag="6" />
+
+            <ImageView
+                android:id="@+id/i8"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:contentDescription="c8"
+                android:onClick="playerTap"
+                android:tag="7" />
+
+            <ImageView
+                android:id="@+id/i9"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:contentDescription="c9"
+                android:onClick="playerTap"
+                android:tag="8" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
